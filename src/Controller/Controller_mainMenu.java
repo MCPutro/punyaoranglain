@@ -26,10 +26,11 @@ public class Controller_mainMenu implements ActionListener{
         mm.setVisible(true);
     }
     public void actionPerformed(ActionEvent e) {
-        Object source = e.getSource();
-        if (source.equals(mm.tambahDokter())){
-            new Controller_tambahDokter(app);
-        }
+//        Object source = e.getSource();
+//        if (source.equals(mm.tambahDokter())){
+//            this.mm.dispose();
+//            new Controller_tambahDokter(app);
+//        }
 //        Object source = e.getSource();
 //        if (source.equals(mm.getOk())){
 //            String s = mm.getMenu();

@@ -24,7 +24,7 @@ public class db {
     public void setConnection(){
         try{
             String username = "root";
-            String password = "hendy";
+            String password = "";
             String url = "jdbc:mysql://localhost:3306/hospital";
             connection = DriverManager.getConnection(url, username, password);
             System.out.println("Connected");

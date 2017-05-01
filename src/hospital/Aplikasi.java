@@ -19,8 +19,8 @@ public class Aplikasi {
     private db DB;
         
     public Aplikasi(){
-//        DB = new db();
-//        DB.setConnection();
+        DB = new db();
+        DB.setConnection();
     }
     
 //    public void saveDokter(String speciality, int salary){

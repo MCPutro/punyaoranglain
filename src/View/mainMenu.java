@@ -53,6 +53,7 @@ public class mainMenu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel3.setFont(new java.awt.Font("Tekton Pro", 0, 34)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Main Menu");
 
         jTabbedPane1.setToolTipText("");
@@ -64,21 +65,21 @@ public class mainMenu extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setText("Tambah Pasien Inap");
 
-        tambahDokter.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\dokter.png")); // NOI18N
+        tambahDokter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/23420-200.png"))); // NOI18N
         tambahDokter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tambahDokterActionPerformed(evt);
             }
         });
 
-        tambahPasien.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\Pasien.png")); // NOI18N
+        tambahPasien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pasien.png"))); // NOI18N
         tambahPasien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tambahPasienActionPerformed(evt);
             }
         });
 
-        tambahPasienInap.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\Pasien Inap.png")); // NOI18N
+        tambahPasienInap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pasien Inap.png"))); // NOI18N
         tambahPasienInap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tambahPasienInapActionPerformed(evt);
@@ -107,7 +108,7 @@ public class mainMenu extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(130, 130, 130)
                         .addComponent(tambahPasienInap)))
-                .addContainerGap(78, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,21 +128,18 @@ public class mainMenu extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Tambah Data Aplikasi", jPanel2);
 
-        lihatListDokter.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\list dokter.png")); // NOI18N
         lihatListDokter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lihatListDokterActionPerformed(evt);
             }
         });
 
-        lihatListPasien.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\lihat list pasien.png")); // NOI18N
         lihatListPasien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lihatListPasienActionPerformed(evt);
             }
         });
 
-        lihatListPasienInap.setIcon(new javax.swing.ImageIcon("D:\\Java\\Tugas Besar PBO\\list pasien inap.png")); // NOI18N
         lihatListPasienInap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lihatListPasienInapActionPerformed(evt);
@@ -162,7 +160,7 @@ public class mainMenu extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(lihatListPasienInap)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(272, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -173,7 +171,7 @@ public class mainMenu extends javax.swing.JFrame {
                     .addComponent(lihatListPasien))
                 .addGap(27, 27, 27)
                 .addComponent(lihatListPasienInap)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(330, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Lihat Data Aplikasi", jPanel3);
@@ -182,11 +180,8 @@ public class mainMenu extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(173, 173, 173)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -324,6 +319,7 @@ public class mainMenu extends javax.swing.JFrame {
         lihatListDokter.addActionListener(a);
         lihatListPasien.addActionListener(a);
         lihatListPasienInap.addActionListener(a);
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
